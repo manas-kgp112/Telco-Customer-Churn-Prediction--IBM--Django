@@ -26,3 +26,58 @@
 [ 2023-06-09 08:49:21,978 ] 78 root - INFO - Confusion matrix saved for K Nearest Neighbors
 [ 2023-06-09 08:49:33,501 ] 84 root - INFO - Classification Report saved for K Nearest Neighbors
 [ 2023-06-09 08:49:33,501 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Support Vector Machine
+[ 2023-06-09 08:53:34,380 ] 63 root - INFO - Best version trained for Support Vector Machine
+[ 2023-06-09 08:53:35,341 ] 68 root - INFO - Printing classification reports for Support Vector Machine
+[ 2023-06-09 08:53:46,670 ] 78 root - INFO - Confusion matrix saved for Support Vector Machine
+[ 2023-06-09 08:53:58,432 ] 84 root - INFO - Classification Report saved for Support Vector Machine
+[ 2023-06-09 08:53:58,433 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Decision Tree Classifier
+[ 2023-06-09 08:53:59,644 ] 63 root - INFO - Best version trained for Decision Tree Classifier
+[ 2023-06-09 08:53:59,651 ] 68 root - INFO - Printing classification reports for Decision Tree Classifier
+[ 2023-06-09 08:54:09,656 ] 78 root - INFO - Confusion matrix saved for Decision Tree Classifier
+[ 2023-06-09 08:54:35,611 ] 84 root - INFO - Classification Report saved for Decision Tree Classifier
+[ 2023-06-09 08:54:35,612 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Random Forest Classifier
+[ 2023-06-09 08:56:25,478 ] 63 root - INFO - Best version trained for Random Forest Classifier
+[ 2023-06-09 08:56:25,651 ] 68 root - INFO - Printing classification reports for Random Forest Classifier
+[ 2023-06-09 08:56:36,851 ] 78 root - INFO - Confusion matrix saved for Random Forest Classifier
+[ 2023-06-09 08:56:47,588 ] 84 root - INFO - Classification Report saved for Random Forest Classifier
+[ 2023-06-09 08:56:47,588 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Bagging Classifier
+[ 2023-06-09 09:02:54,171 ] 63 root - INFO - Best version trained for Bagging Classifier
+[ 2023-06-09 09:02:54,913 ] 68 root - INFO - Printing classification reports for Bagging Classifier
+[ 2023-06-09 09:03:06,315 ] 78 root - INFO - Confusion matrix saved for Bagging Classifier
+[ 2023-06-09 09:03:18,195 ] 84 root - INFO - Classification Report saved for Bagging Classifier
+[ 2023-06-09 09:03:18,196 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Gradient Boosting Classifier
+[ 2023-06-09 09:04:33,061 ] 63 root - INFO - Best version trained for Gradient Boosting Classifier
+[ 2023-06-09 09:04:33,106 ] 68 root - INFO - Printing classification reports for Gradient Boosting Classifier
+[ 2023-06-09 09:04:43,534 ] 78 root - INFO - Confusion matrix saved for Gradient Boosting Classifier
+[ 2023-06-09 09:04:53,829 ] 84 root - INFO - Classification Report saved for Gradient Boosting Classifier
+[ 2023-06-09 09:04:53,829 ] 60 root - INFO - Implementing GridSearchCV() to find the version of AdaBoost
+[ 2023-06-09 09:04:54,843 ] 63 root - INFO - Best version trained for AdaBoost
+[ 2023-06-09 09:04:54,847 ] 68 root - INFO - Printing classification reports for AdaBoost
+[ 2023-06-09 09:05:05,047 ] 78 root - INFO - Confusion matrix saved for AdaBoost
+[ 2023-06-09 09:05:15,633 ] 84 root - INFO - Classification Report saved for AdaBoost
+[ 2023-06-09 09:05:15,633 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Stacking Classifier
+[ 2023-06-09 09:06:13,638 ] 63 root - INFO - Best version trained for Stacking Classifier
+[ 2023-06-09 09:06:13,748 ] 68 root - INFO - Printing classification reports for Stacking Classifier
+[ 2023-06-09 09:06:23,932 ] 78 root - INFO - Confusion matrix saved for Stacking Classifier
+[ 2023-06-09 09:06:34,592 ] 84 root - INFO - Classification Report saved for Stacking Classifier
+[ 2023-06-09 09:06:34,593 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Voting Classifier
+[ 2023-06-09 09:06:45,779 ] 63 root - INFO - Best version trained for Voting Classifier
+[ 2023-06-09 09:06:45,888 ] 68 root - INFO - Printing classification reports for Voting Classifier
+[ 2023-06-09 09:06:56,792 ] 78 root - INFO - Confusion matrix saved for Voting Classifier
+[ 2023-06-09 09:07:08,193 ] 84 root - INFO - Classification Report saved for Voting Classifier
+[ 2023-06-09 09:07:08,194 ] 60 root - INFO - Implementing GridSearchCV() to find the version of XgBoost
+[ 2023-06-09 09:07:10,171 ] 63 root - INFO - Best version trained for XgBoost
+[ 2023-06-09 09:07:10,185 ] 68 root - INFO - Printing classification reports for XgBoost
+[ 2023-06-09 09:07:20,593 ] 78 root - INFO - Confusion matrix saved for XgBoost
+[ 2023-06-09 09:07:31,088 ] 84 root - INFO - Classification Report saved for XgBoost
+[ 2023-06-09 09:07:31,089 ] 60 root - INFO - Implementing GridSearchCV() to find the version of LightGBM
+[ 2023-06-09 09:07:33,817 ] 63 root - INFO - Best version trained for LightGBM
+[ 2023-06-09 09:07:33,832 ] 68 root - INFO - Printing classification reports for LightGBM
+[ 2023-06-09 09:07:44,503 ] 78 root - INFO - Confusion matrix saved for LightGBM
+[ 2023-06-09 09:07:55,768 ] 84 root - INFO - Classification Report saved for LightGBM
+[ 2023-06-09 09:07:55,768 ] 60 root - INFO - Implementing GridSearchCV() to find the version of CatBoost
+[ 2023-06-09 09:10:41,693 ] 63 root - INFO - Best version trained for CatBoost
+[ 2023-06-09 09:10:41,713 ] 68 root - INFO - Printing classification reports for CatBoost
+[ 2023-06-09 09:10:52,396 ] 78 root - INFO - Confusion matrix saved for CatBoost
+[ 2023-06-09 09:11:03,752 ] 84 root - INFO - Classification Report saved for CatBoost
+[ 2023-06-09 09:11:03,752 ] 88 root - INFO - All models successfully evaluated and the best versions of each are selected.
