@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicter</title>
+</head>
+<body>
+    <button id="home">Home</button>
+    <h1>Enter your sample datapoint here to get predictions about the customer.</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        CustomerID : {{form.CustomerID}} <br> <!--: <input type='' required name='CustomerID'><br> -->
+        Count : {{form.Count}} <br> <!--: <input type='' required name='Count'><br> -->
+        Country : {{form.Country}} <br> <!--: <input type='' required name='Country'><br> -->
+        State : {{form.State}} <br> <!--: <input type='' required name='State'><br> -->
+        City : {{form.City}} <br> <!--: <input type='' required name='City'><br> -->
+        ZipCode : {{form.ZipCode}} <br> <!--: <input type='' required name='ZipCode'><br> -->
+        Latitude : {{form.Latitude}} <br> <!--: <input type='' required name='Latitude'><br> -->
+        Longitude : {{form.Longitude}} <br> <!--: <input type='' required name='Longitude'><br> -->
+        Gender : {{form.Gender}} <br> <!--: <input type='' required name='Gender'><br> -->
+        SeniorCitizen : {{form.SeniorCitizen}} <br> <!--: <input type='' required name='SeniorCitizen'><br> -->
+        Partner : {{form.Partner}} <br> <!--: <input type='' required name='Partner'><br> -->
+        Dependents : {{form.Dependents}} <br> <!--: <input type='' required name='Dependents'><br> -->
+        TenureMonths : {{form.TenureMonths}} <br> <!--: <input type='' required name='TenureMonths'><br> -->
+        PhoneService : {{form.PhoneService}} <br> <!--: <input type='' required name='PhoneService'><br> -->
+        MultipleLines : {{form.MultipleLines}} <br> <!--: <input type='' required name='MultipleLines'><br> -->
+        InternetService : {{form.InternetService}} <br> <!--: <input type='' required name='InternetService'><br> -->
+        OnlineSecurity : {{form.OnlineSecurity}} <br> <!--: <input type='' required name='OnlineSecurity'><br> -->
+        OnlineBackup : {{form.OnlineBackup}} <br> <!--: <input type='' required name='OnlineBackup'><br> -->
+        DeviceProtection : {{form.DeviceProtection}} <br> <!--: <input type='' required name='DeviceProtection'><br> -->
+        TechSupport : {{form.TechSupport}} <br> <!--: <input type='' required name='TechSupport'><br> -->
+        StreamingTV : {{form.StreamingTV}} <br> <!--: <input type='' required name='StreamingTV'><br> -->
+        StreamingMovies : {{form.StreamingMovies}} <br> <!--: <input type='' required name='StreamingMovies'><br> -->
+        Contract : {{form.Contract}} <br> <!--: <input type='' required name='Contract'><br> -->
+        PaperlessBilling : {{form.PaperlessBilling}} <br> <!--: <input type='' required name='PaperlessBilling'><br> -->
+        PaymentMethod : {{form.PaymentMethod}} <br> <!--: <input type='' required name='PaymentMethod'><br> -->
+        MonthlyCharges : {{form.MonthlyCharges}} <br> <!--: <input type='' required name='MonthlyCharges'><br> -->
+        TotalCharges : {{form.TotalCharges}} <br> <!--: <input type='' required name='TotalCharges'><br> -->
+        CLTV : {{form.CLTV}} <br> <!--: <input type='' required name='CLTV'><br> -->
+        <input type="submit" name="Submit">
+    </form>
+    
+</body>
+<script>
+    const home_btn = document.getElementById("home")
+    home_btn.onclick = () => {
+        location.href = '{% url "home" %}'
+    }
+</script>
+</html>

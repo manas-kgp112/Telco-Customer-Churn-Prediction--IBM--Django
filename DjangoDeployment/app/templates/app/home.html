@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the dashboard of our Churn Predictor</h1>
+    <a href="#" id="code"><button>View source code</button></a>
+    <button id="predict_page">Predict for sample datapoint.</button>
+</body>
+<script>
+    const predict_btn = document.getElementById("predict_page")
+    predict_btn.onclick = () => {
+        location.href = "{%url 'predict' %}"
+    }
+    const code_btn = document.getElementById("code")
+    code_btn.onclick = () => {
+        location.href = "https://github.com/manas-kgp112/Customer-Churn-Prediction-IBM-Telco-"
+    }
+</script>
+</html>

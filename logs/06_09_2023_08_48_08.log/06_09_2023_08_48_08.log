@@ -1,0 +1,28 @@
+[ 2023-06-09 08:48:11,555 ] 56 root - INFO - Initiating Data Ingestion sequence...
+[ 2023-06-09 08:48:16,437 ] 71 root - INFO - Extracted 6 files as DataFrames.
+[ 2023-06-09 08:48:16,438 ] 39 root - INFO - Initiating data visulaization sequence...
+[ 2023-06-09 08:48:16,438 ] 40 root - INFO - Extracting categorical features.
+[ 2023-06-09 08:48:18,010 ] 69 root - INFO - Plots saved as : artifacts\plots\categorical_features_plot.pdf
+[ 2023-06-09 08:48:18,320 ] 85 root - INFO - Plots saved as : artifacts\plots\continous_features_plot.pdf
+[ 2023-06-09 08:48:18,320 ] 87 root - INFO - Initiating data transformation sequence...
+[ 2023-06-09 08:48:18,320 ] 71 root - INFO - Data transformation object extracted.
+[ 2023-06-09 08:48:18,332 ] 100 root - INFO - Applying preprocessing object on training dataframe
+[ 2023-06-09 08:48:18,352 ] 103 root - INFO - Data transformed successfully
+[ 2023-06-09 08:48:18,357 ] 77 root - INFO - Initialising model building process...
+[ 2023-06-09 08:48:18,357 ] 50 root - INFO - Evaluating models.
+[ 2023-06-09 08:48:18,360 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Logistic Regression
+[ 2023-06-09 08:48:27,285 ] 63 root - INFO - Best version trained for Logistic Regression
+[ 2023-06-09 08:48:27,290 ] 68 root - INFO - Printing classification reports for Logistic Regression
+[ 2023-06-09 08:48:38,778 ] 78 root - INFO - Confusion matrix saved for Logistic Regression
+[ 2023-06-09 08:48:48,129 ] 84 root - INFO - Classification Report saved for Logistic Regression
+[ 2023-06-09 08:48:48,129 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Gaussian Naive Bayes
+[ 2023-06-09 08:48:48,156 ] 63 root - INFO - Best version trained for Gaussian Naive Bayes
+[ 2023-06-09 08:48:48,163 ] 68 root - INFO - Printing classification reports for Gaussian Naive Bayes
+[ 2023-06-09 08:48:58,339 ] 78 root - INFO - Confusion matrix saved for Gaussian Naive Bayes
+[ 2023-06-09 08:49:09,094 ] 84 root - INFO - Classification Report saved for Gaussian Naive Bayes
+[ 2023-06-09 08:49:09,100 ] 60 root - INFO - Implementing GridSearchCV() to find the version of K Nearest Neighbors
+[ 2023-06-09 08:49:10,382 ] 63 root - INFO - Best version trained for K Nearest Neighbors
+[ 2023-06-09 08:49:10,448 ] 68 root - INFO - Printing classification reports for K Nearest Neighbors
+[ 2023-06-09 08:49:21,978 ] 78 root - INFO - Confusion matrix saved for K Nearest Neighbors
+[ 2023-06-09 08:49:33,501 ] 84 root - INFO - Classification Report saved for K Nearest Neighbors
+[ 2023-06-09 08:49:33,501 ] 60 root - INFO - Implementing GridSearchCV() to find the version of Support Vector Machine
