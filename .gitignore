@@ -1,1 +1,4 @@
 venv
+catboost_info
+notebook/catboost_info
+notebook/df_info

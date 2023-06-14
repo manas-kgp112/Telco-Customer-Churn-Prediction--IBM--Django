@@ -17,4 +17,7 @@ catboost
 reportlab
 sklearn_evaluation
 django
+gunicorn
+martor
+django-environ
 -e .
