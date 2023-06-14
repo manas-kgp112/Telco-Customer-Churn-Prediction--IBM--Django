@@ -16,7 +16,7 @@
 ### Folder Structure
 Here is the screenshot if how the folder structure looks like
 
-![Folder Structure Image](/custom_img/directory.png)
+![Folder Structure Image](/custom_img/directory.jpg)
 
 1) artifacts : Contains all the input and output data related to the project (input data, final models, preprocessor files etc.)
 
