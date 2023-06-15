@@ -37,6 +37,7 @@ Write the following commands in the bash terminal :
 
 ```
 git clone git@github.com:manas-kgp112/Customer-Churn-Prediction-IBM-Telco-.git .
+conda create -p venv python=3.9.16 -y
 conda activate venv/
 cd DjangoDeployment
 py manage.py runserver 0.0.0.0:8000
