@@ -1,47 +1,270 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
+    <style>
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {
+            background-color: transparent;
+            border: 1.2px solid white;
+            color: white;
+        }
+
+        select option {
+            color: black;
+        }
+    </style>
     <title>Predicter</title>
 </head>
+
 <body>
-    <button id="home">Home</button>
-    <h1>Enter your sample datapoint here to get predictions about the customer.</h1>
+    {% include 'app/navbar.html' %}
     <form action="" method="post">
         {% csrf_token %}
-        CustomerID : {{form.CustomerID}} <br> <!--: <input type='' required name='CustomerID'><br> -->
-        Count : {{form.Count}} <br> <!--: <input type='' required name='Count'><br> -->
-        Country : {{form.Country}} <br> <!--: <input type='' required name='Country'><br> -->
-        State : {{form.State}} <br> <!--: <input type='' required name='State'><br> -->
-        City : {{form.City}} <br> <!--: <input type='' required name='City'><br> -->
-        ZipCode : {{form.ZipCode}} <br> <!--: <input type='' required name='ZipCode'><br> -->
-        Latitude : {{form.Latitude}} <br> <!--: <input type='' required name='Latitude'><br> -->
-        Longitude : {{form.Longitude}} <br> <!--: <input type='' required name='Longitude'><br> -->
-        Gender : {{form.Gender}} <br> <!--: <input type='' required name='Gender'><br> -->
-        SeniorCitizen : {{form.SeniorCitizen}} <br> <!--: <input type='' required name='SeniorCitizen'><br> -->
-        Partner : {{form.Partner}} <br> <!--: <input type='' required name='Partner'><br> -->
-        Dependents : {{form.Dependents}} <br> <!--: <input type='' required name='Dependents'><br> -->
-        TenureMonths : {{form.TenureMonths}} <br> <!--: <input type='' required name='TenureMonths'><br> -->
-        PhoneService : {{form.PhoneService}} <br> <!--: <input type='' required name='PhoneService'><br> -->
-        MultipleLines : {{form.MultipleLines}} <br> <!--: <input type='' required name='MultipleLines'><br> -->
-        InternetService : {{form.InternetService}} <br> <!--: <input type='' required name='InternetService'><br> -->
-        OnlineSecurity : {{form.OnlineSecurity}} <br> <!--: <input type='' required name='OnlineSecurity'><br> -->
-        OnlineBackup : {{form.OnlineBackup}} <br> <!--: <input type='' required name='OnlineBackup'><br> -->
-        DeviceProtection : {{form.DeviceProtection}} <br> <!--: <input type='' required name='DeviceProtection'><br> -->
-        TechSupport : {{form.TechSupport}} <br> <!--: <input type='' required name='TechSupport'><br> -->
-        StreamingTV : {{form.StreamingTV}} <br> <!--: <input type='' required name='StreamingTV'><br> -->
-        StreamingMovies : {{form.StreamingMovies}} <br> <!--: <input type='' required name='StreamingMovies'><br> -->
-        Contract : {{form.Contract}} <br> <!--: <input type='' required name='Contract'><br> -->
-        PaperlessBilling : {{form.PaperlessBilling}} <br> <!--: <input type='' required name='PaperlessBilling'><br> -->
-        PaymentMethod : {{form.PaymentMethod}} <br> <!--: <input type='' required name='PaymentMethod'><br> -->
-        MonthlyCharges : {{form.MonthlyCharges}} <br> <!--: <input type='' required name='MonthlyCharges'><br> -->
-        TotalCharges : {{form.TotalCharges}} <br> <!--: <input type='' required name='TotalCharges'><br> -->
-        CLTV : {{form.CLTV}} <br> <!--: <input type='' required name='CLTV'><br> -->
-        <input type="submit" name="Submit">
+        <section class="text-gray-400 bg-gray-900 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Churn Prediction Software</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Welcome to the interface of Churn Prediction Software designed by our Data Analyst department. Enter your sample datapoint here to get predictions about the customer.</p>
+                </div>
+                <div class="flex flex-wrap -m-2">
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">CustomerID</h2>
+                                {{form.CustomerID}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Count</h2>
+                                {{form.Count}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Country</h2>
+                                {{form.Country}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">State</h2>
+                                {{form.State}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">City</h2>
+                                {{form.City}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">ZipCode</h2>
+                                {{form.ZipCode}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Latitude</h2>
+                                {{form.Latitude}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Longitude</h2>
+                                {{form.Longitude}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">SeniorCitizen</h2>
+                                {{form.SeniorCitizen}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Partner</h2>
+                                {{form.Partner}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Dependents</h2>
+                                {{form.Dependents}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">TenureMonths</h2>
+                                {{form.TenureMonths}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">PhoneService</h2>
+                                {{form.PhoneService}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">MultipleLines</h2>
+                                {{form.MultipleLines}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">InternetService</h2>
+                                {{form.InternetService}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">OnlineSecurity</h2>
+                                {{form.OnlineSecurity}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">OnlineBackup</h2>
+                                {{form.OnlineBackup}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">DeviceProtection</h2>
+                                {{form.DeviceProtection}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">TechSupport</h2>
+                                {{form.TechSupport}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">StreamingTV</h2>
+                                {{form.StreamingTV}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">StreamingMovies</h2>
+                                {{form.StreamingMovies}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">Contract</h2>
+                                {{form.Contract}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">PaperlessBilling</h2>
+                                {{form.PaperlessBilling}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">PaymentMethod</h2>
+                                {{form.PaymentMethod}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">MonthlyCharges</h2>
+                                {{form.MonthlyCharges}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">TotalCharges</h2>
+                                {{form.TotalCharges}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <h2 class="text-white title-font font-medium">CLTV</h2>
+                                {{form.CLTV}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-full md:w-full w-full flex items-center justify-center">
+                        <div class="h-full flex items-center border-gray-800 border p-4 rounded-lg">
+                            <div class="flex-grow">
+                                <button type="submit" name="Submit" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </form>
-    
+    {% include 'app/footer.html' %}
 </body>
 <script>
     const home_btn = document.getElementById("home")
@@ -49,4 +272,5 @@
         location.href = '{% url "home" %}'
     }
 </script>
+
 </html>

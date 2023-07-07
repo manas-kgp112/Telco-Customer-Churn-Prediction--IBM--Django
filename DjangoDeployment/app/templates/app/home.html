@@ -1,15 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/styles.css' %}">
     <title>Home</title>
 </head>
+
 <body>
-    <h1>Welcome to the dashboard of our Churn Predictor</h1>
-    <a href="#" id="code"><button>View source code</button></a>
-    <button id="predict_page">Predict for sample datapoint.</button>
+    {% include 'app/navbar.html' %}
+    {% include 'app/section.html' %}
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center">
+                <div class="p-4 sm:w-1/2 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-white"></h2>
+                    <button id="code" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Source Code</button>
+                    <!-- <p class="leading-relaxed">Source Code</p> -->
+                </div>
+                <div class="p-4 sm:w-1/2 w-1/2">
+                    <h2 class="title-font font-medium sm:text-4xl text-3xl text-white"></h2>
+                    <button id="predict_page" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Churn Prediction Software</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'app/footer.html' %}
 </body>
 <script>
     const predict_btn = document.getElementById("predict_page")
@@ -21,4 +40,5 @@
         location.href = "https://github.com/manas-kgp112/Customer-Churn-Prediction-IBM-Telco-"
     }
 </script>
+
 </html>
