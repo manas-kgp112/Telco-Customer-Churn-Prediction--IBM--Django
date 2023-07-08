@@ -5,6 +5,6 @@ from app import views
 # urls
 
 urlpatterns = [
-    path("home/", views.homePage, name="home"),
+    path("", views.homePage, name="home"),
     path("predict/", views.predictPage, name="predict")
 ]
